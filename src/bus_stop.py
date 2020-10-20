@@ -11,3 +11,8 @@ class BusStop:
 
     def clear(self):
         self.queue.clear()
+
+    def add_all(self, list_of_passengers):
+        # first test -adding people to a list from a list
+        for person in list_of_passengers:
+            self.queue.append(person)

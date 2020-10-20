@@ -2,10 +2,13 @@ import unittest
 from src.bus_stop import BusStop
 from src.person import Person
 
+
 class TestBusStop(unittest.TestCase):
     def setUp(self):
         self.bus_stop = BusStop("Waverly Station")
-        self.person = Person("Guido van Rossum", 64)
+        self.person = Person(
+            "Guido van Rossum", 64, "Waverley Station", "Edinburgh Castle"
+        )
 
     def test_bus_stop_has_name(self):
         self.assertEqual("Waverly Station", self.bus_stop.name)
